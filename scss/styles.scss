@@ -75,21 +75,25 @@ header {
             display: none;
             position: absolute;
             background-color: $white;
-            top: 4rem;
+            top: 6rem;
             right: 1.5rem;
-            padding: 1rem 3rem;
+            width: 20rem;
+            height: 18rem;
             list-style: none;
             text-align: center;
             flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem 0;
+            margin: 0;
 
             li {
-                margin: .5rem 0;
 
                 .nav-link {
                     text-decoration: none;
                     color: $dark-grayish-blue;
                     font-family: 'Barlow', sans-serif;
-                    font-size: .83rem;
+                    font-size: 1rem;
 
                     transition: color 200ms linear;
 
@@ -100,14 +104,14 @@ header {
 
                 &:nth-of-type(4) {
                     background-color: $yellow;
-                    padding: .5rem 1rem;
+                    padding: .75rem 1.5rem;
                     border-radius: 1.5rem;
 
                     transition: all 200ms linear;
 
                     .nav-link {
                         font-family: 'Fraunces', serif;
-                        font-size: .65rem;
+                        font-size: .85rem;
                         color: $very-dark-desat-blue;
                         text-transform: uppercase;
                     }
@@ -115,8 +119,6 @@ header {
                     &:hover {
                         cursor: pointer;
                         background-color: rgb(108, 208, 254);
-                        
-
                         .nav-link {
                             color: $white;
                         }
@@ -144,6 +146,10 @@ header {
             text-transform: uppercase;
             color: $white;
             letter-spacing: 6px;
+        }
+
+        #down-arrow {
+            margin-top: 3rem;
         }
     }
 }
@@ -458,7 +464,7 @@ footer {
 
         nav {
             height: 5rem;
-            padding: 3rem 2rem 2rem 2rem;
+            padding: 1rem 4rem;
     
             .nav-links::before {
                 display: none;
@@ -491,6 +497,14 @@ footer {
                         }
                     }
                 }
+            }
+        }
+
+        .banner {
+            width: 60rem;
+    
+            h1 {
+                font-size: 4.5rem;
             }
         }
     }
